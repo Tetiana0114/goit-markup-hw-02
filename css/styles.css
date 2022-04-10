@@ -1,15 +1,19 @@
 :root {
-  --background-and-text-color: #ffffff;
-  --hero-and-footer-background-color: #2f303a;
+  --background-white: #ffffff;
+  --text-white: #ffffff;
+  --hero-background-color: #2f303a;
+  --footer-backround-color: #2f303a;
   --hover-and-focus-color: #2196f3;
-  --main-tittle-color: #212121;
+  --main-color: #212121;
   --main-text-color: #757575;
   --main-btn-color: #f5f4fa;
   --second-btn-color: #188ce8;
   --black-color: #000000;
+  --second-background-color: #f5f4fa;
 }
 body {
   font-family: 'Roboto', Tahoma, sans-serif;
+  color: var(--main-color);
 }
 .link {
   text-decoration: none;
@@ -20,7 +24,7 @@ body {
 
 /* -------------Header------------- */
 .header {
-  background-color: var(--background-and-text-color);
+  background-color: var(--background-white);
 }
 .webstudio {
   font-family: 'Raleway';
@@ -40,7 +44,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-tittle-color);
+  color: var(--main-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -66,25 +70,26 @@ body {
 
 /* -------------Hero------------- */
 .hero {
-  background-color: var(--hero-and-footer-background-color);
+  background-color: var(--hero-background-color);
 }
 .hero-title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-and-text-color);
+  color: var(--text-white);
 }
 .hero-btn {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  color: var(--background-and-text-color);
+  color: var(--text-white);
   background-color: var(--hover-and-focus-color);
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -99,10 +104,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-tittle-color);
 }
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -113,14 +116,13 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--main-tittle-color);
 }
 /* -------------Наша команда------------- */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--second-background-color);
 }
 .team-list {
-  background-color: var(--background-and-text-color);
+  background-color: var(--background-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -129,7 +131,6 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--main-tittle-color);
 }
 .team-item-title {
   font-weight: 500;
@@ -137,7 +138,6 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-tittle-color);
 }
 .team-item-text {
   font-size: 16px;
@@ -148,17 +148,17 @@ body {
 }
 /* -------------Footer------------- */
 .footer {
-  background-color: var(--hero-and-footer-background-color);
+  background-color: var(--footer-backround-color);
 }
 .footer-studio {
-  color: var(--background-and-text-color);
+  color: var(--text-white);
 }
 .footer-adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--background-and-text-color);
+  color: var(--text-white);
 }
 .footer-mail,
 .footer-tel {
@@ -183,15 +183,15 @@ body {
   visibility: hidden;
 }
 .filter-btn {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #f5f4fa;
-  border-color: #f5f4fa;
+  color: var(--main-color);
+  background-color: var(--main-btn-color);
+  border-color: var(--main-btn-color);
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -199,29 +199,22 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var(--background-and-text-color);
+  color: var(--text-white);
   border-color: var(--hover-and-focus-color);
   background-color: var(--hover-and-focus-color);
 }
 /* -------------Проекты------------- */
 .project-list-item {
-  background-color: var(--background-and-text-color);
+  background-color: var(--background-white);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 .project-list-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-tittle-color);
 }
 .project-list-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
