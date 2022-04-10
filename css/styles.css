@@ -15,40 +15,23 @@ body {
 .list {
     list-style: none;
   }
-.visually-hidden {
-     position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
 
-  /* -------------HEADER------------- */
+/* -------------Header------------- */
 .header {
     background-color: #FFFFFF;
   }
-.header-logo-first {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+.webstudio {
+  font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
 }
-.header-logo-second {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
+.web {
+  color: #2196F3;
+}
+.studio {
+  color: #000000;
 }
 .header-link {
     font-weight: 500;
@@ -61,7 +44,8 @@ body {
 .header-link:focus {
   color: #2196F3;
 }
-.header-mail {
+.header-mail,
+.header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -69,17 +53,13 @@ body {
     color: #757575;
 }
 .header-mail:hover,
-.header-mail:focus {
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
     color: #2196F3;
 }
-.header-tel {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
-}
-/* -------------HERO------------- */
+
+/* -------------Hero------------- */
 .hero {
     background-color: #2F303A;
 }
@@ -101,5 +81,84 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 background-color: #2196F3;
 }
-/* -------------FEATURES------------- */
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188CE8;
+}
+/* -------------Особенности------------- */
+.features-text-title {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+.features-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;  
+}
+/* -------------Чем мы занимаемся------------- */
+.working-title {
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: #212121;
+}
+/* -------------Наша команда------------- */
+.team {
+  background-color: #F5F4FA;
+}
+.team-list {
+  background-color: #FFFFFF;
+}
+.team-title {
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team-item-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team-item-text {
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* -------------Footer------------- */
+.footer {
+  background-color: #2F303A;
+}
+.footer-studio {
+  color: #FFFFFF;
+}
+.footer-adress {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+.footer-mail,
+.footer-tel {
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
 
