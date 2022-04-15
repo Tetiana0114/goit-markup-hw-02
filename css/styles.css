@@ -12,8 +12,10 @@
   --second-background-color: #f5f4fa;
 }
 body {
-  font-family: 'Roboto', Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--main-color);
+  background-color: var(--background-white);
+  font-size: 14px;
 }
 .link {
   text-decoration: none;
@@ -41,7 +43,7 @@ body {
   background-color: var(--background-white);
 }
 .webstudio {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -60,13 +62,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--hover-and-focus-color);
-}
-.current {
-  color: var(--hover-and-focus-color);
-}
 .header-mail,
 .header-tel {
   font-weight: 500;
@@ -75,6 +70,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.current,
+.header-link:hover,
+.header-link:focus,
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
@@ -104,6 +102,7 @@ body {
   color: var(--text-white);
   background-color: var(--hover-and-focus-color);
   cursor: pointer;
+  border-color: transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -117,7 +116,6 @@ body {
   text-transform: uppercase;
 }
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -132,8 +130,10 @@ body {
 .team {
   background-color: var(--second-background-color);
 }
-.team-list {
+.team-item {
   background-color: var(--background-white);
+}
+.team-list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -200,10 +200,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-color);
   background-color: var(--main-btn-color);
-  border-color: var(--main-btn-color);
   border-radius: 4px;
   cursor: pointer;
+  border-color: transparent;
 }
+.first-btn,
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--text-white);
@@ -216,7 +217,6 @@ body {
 /* -------------Проекты------------- */
 .project-list-item {
   background-color: var(--background-white);
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 .project-list-title {
